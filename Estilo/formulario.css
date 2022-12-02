@@ -1,0 +1,63 @@
+@charset "UTF-8";
+
+form{
+    max-width: 550px;
+    min-width: 350px;
+    margin: auto;
+}
+
+input, textarea{
+    font-family: sans-serif;
+    font-weight: normal;
+    font-size: 13pt;
+    background-color: rgba(255, 255, 255, 0.7);
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.363);
+
+}
+input:hover, textarea:hover{
+    background-color: antiquewhite;
+
+}
+legend{
+    color: #750404;
+    font-weight: bolder;
+    font-size: 16pt;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+label{font-size: 13pt;}
+
+
+fieldset{
+    border-color: #cecece;
+    margin: 20px;
+
+   
+}
+
+fieldset#sexo{
+    width: 130px;
+    background-color: #cecece62;
+    border-radius: 5px 20px;
+    box-shadow: 3px 5px rgba(0, 0, 0, 0.363);
+}
+
+fieldset#mensagem{
+    background: url("../media/icone-mensagem.png") no-repeat 97% 95%;
+
+}
+
+input.botao{
+    border-radius: 5px;
+    border: 0px solid gray;
+    background-color: #94939396;
+    padding: 2px 20px;
+    margin: 0px 40px;
+    display: inline-flex;
+}
+
+input.botao:hover{
+    color: #750404;
+    font-weight: bold;
+
+    background-color:antiquewhite;
+}

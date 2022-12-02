@@ -1,0 +1,258 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@700&family=Raleway&display=swap');
+
+:root {
+    --cor0: #387CA6;
+    --cor1: #96D2D9;
+    --cor2: #F2E8C9;
+    --cor3: #735B2F;
+    --cor4: #047575;
+    --cor5: #a82f03;
+    
+    --font-destaque: 'Raleway', sans-serif;
+    --font-titulo: 'Fuzzy Bubbles', sans-serif;
+
+}
+
+*{
+    margin-top: 0px;
+
+}
+
+header >img{
+    width: 100%;
+
+}
+
+header{
+    min-width: 300px;
+    max-width: 1340px;
+    border-radius: 30px;
+    border-top: 1px;
+    margin: auto;
+    align-items: center;
+
+}
+
+
+body{
+    background-color: var(--cor1);
+    font-family: var(--font-destaque); 
+
+}
+
+.menu{
+    min-width: 200px;
+    max-width: 1330px;
+    display: block;
+    background-color: #047575;
+    padding: 5px;
+    margin: -4px auto 1px auto;   
+    box-shadow: 8px 8px 10px #546f798a;
+    border-radius: 0 0 10px 10px;
+}
+
+.nav-list{
+    display: block;
+
+
+}
+
+.nav-list ul{
+    display: block;
+    text-align: center;
+    align-items: center;
+    list-style: none;
+
+}
+
+.nav-link:hover{
+    color: #735B2F;
+    background-color:#F2E8C9;
+    padding: 10px;
+
+}
+
+.nav-item{
+    display: inline-flex;
+    text-align: center;
+    align-content: space-between;
+    padding: 5px;
+    margin: 2px 2px;
+    border-radius: 15px;
+}
+ 
+.nav-link{
+    color: var(--cor2);
+    padding: 5px 10px;
+    margin: auto;
+    border-radius: 10px ;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    transition-duration: 0.3s;
+}
+a{
+    color: #387CA6;
+    font-weight: bold ;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #F2E8C9;
+    background-color: #047575;
+    padding: 10px;
+    font-weight: bold ;
+    text-decoration: underline;
+    border-radius: 15px;
+}
+
+.mobile-menu-icon{
+    display: none;
+
+}
+
+.mobile-menu{
+    display: none;
+}
+
+main{
+    background-color: rgb(252, 252, 247);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 10px 10px 15px #546f798a;
+    min-width: 320px;
+    max-width: 1303px;
+    margin: auto;
+}
+
+main img{ 
+    width: 85%;
+    margin: 20px auto;
+    display: block;
+    border: 2px solid black  ;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.445);
+    border-radius: 20px 2px;
+
+    
+
+}
+h1#titulo{
+    text-align: center;
+    font-size: 35px;
+    margin: 25px;
+  
+}
+h1{
+    font-family: var(--font-titulo);
+    color: var(--cor4);
+    font-size: 30px;
+}
+h2{
+    font-family: var(--font-titulo);
+    padding: 5px;
+    color:var(--cor5);
+    background-image: linear-gradient(to right, rgba(126, 234, 248, 0.459), transparent);
+    border-radius: 10px;
+}
+
+h3{
+    color: var(--cor3);
+    padding-top: 25px;
+}
+
+p{
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 1.5em;
+}
+
+
+div.video{
+
+    margin: 0px;
+    padding: 50px;
+    padding-bottom: 50%;
+    position: relative;
+}
+
+div.video > iframe{
+    position: absolute;
+    top: 20px ;
+    left: 20px ;
+    width: 90% ;
+    height: 90% ;
+
+}
+
+footer{
+    text-align: center;
+
+}
+
+hr{
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 850px)
+ {
+    .menu{
+        padding: 1.5 rem 4rem;
+        margin: -4px auto 1px auto;
+
+    }
+    .nav-item{
+        display: none;
+
+    }
+    .mobile-menu-icon{
+        display: block;
+    }
+    .mobile-menu-icon button{
+        background-color: #047575;
+        border: none;
+        cursor: pointer;
+
+
+    }
+    .mobile-menu ul{
+        display: flex; 
+        background-color: #047575;
+        flex-direction: column;
+        text-align: center;
+        border-radius: 10px;
+        margin-left: 0px ;
+        border-left: 0px;
+        padding-left: 0px;
+       
+    }
+
+    .mobile-menu .nav-item{
+        display: flex;
+
+
+    }
+
+    .mobile-menu .nav-item:hover{
+        display: flex;
+        background-color:#735B2F;
+        
+
+    }
+
+    .mobile-menu .nav-link:hover{
+        color: #F2E8C9;
+        background-color: transparent;
+        text-decoration: none;
+
+
+    }
+
+    .open{
+        display: block;
+    }
+    
+}
